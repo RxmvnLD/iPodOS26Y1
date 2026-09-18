@@ -3,9 +3,9 @@
 %wd
 %X(iPodOS26WPS_DARK.bmp)
 
-%xl(S,ShuffleON.bmp,0,0)
-%xl(R,RepeatON.bmp,0,0)
-%xl(U,Repeat1.bmp,0,0)
+%xl(S,ShuffleON_WPS.bmp,0,0)
+%xl(R,RepeatON_WPS.bmp,0,0)
+%xl(U,Repeat1_WPS.bmp,0,0)
 
 %xl(H,batterydead.bmp,0,0)
 %xl(I,battery1.bmp,0,0)
@@ -41,7 +41,7 @@
 
 # Progress: 100x4 -> 150x6 in asset, 8 -> 12 viewport height
 %V(287,134,150,12,-)
-%pb(0,0,150,12,progress_bar.bmp)
+%pb(0,0,150,12,progress_bar_WPS.bmp)
 
 # Time
 %V(287,143,150,30,1)
@@ -55,7 +55,7 @@
 
 # Volume slider: 36x87 -> 54x131
 %V(288,174,54,131,-)
-%pv(0,0,54,131,SPKfull.bmp,vertical)
+%pv(0,0,54,131,SPKfull_WPS.bmp,vertical)
 
 # Shuffle / Repeat icons: 39x39 -> 59x59
 %V(372,174,59,59,-)

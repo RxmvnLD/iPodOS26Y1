@@ -3,13 +3,13 @@
 %wd
 %X(iPodOS26SBS_LIGHT.bmp)
 
-%xl(A,ShuffleON.bmp,0,0)
-%xl(B,ShuffleOFF.bmp,0,0)
-%xl(C,RepeatON.bmp,0,0)
-%xl(U,Repeat1.bmp,0,0)
-%xl(D,RepeatOFF.bmp,0,0)
-%xl(E,PLAY.bmp,0,0)
-%xl(F,PAUSE.bmp,0,0)
+%xl(A,ShuffleON_SBS.bmp,0,0)
+%xl(B,ShuffleOFF_SBS.bmp,0,0)
+%xl(C,RepeatON_SBS.bmp,0,0)
+%xl(U,Repeat1_SBS.bmp,0,0)
+%xl(D,RepeatOFF_SBS.bmp,0,0)
+%xl(E,PLAY_SBS.bmp,0,0)
+%xl(F,PAUSE_SBS.bmp,0,0)
 
 # Invisible selector
 %xl(T,selectorinvisible.bmp,22,62)
@@ -58,7 +58,7 @@
 
 # Mini player progress: 132x5 -> 198x8
 %V(45,312,198,8,-)
-%pb(0,0,198,8,progress_bar_sbs.bmp)
+%pb(0,0,198,8,progress_bar_SBS.bmp)
 
 # Mini-player controls: 39x39 -> 59x59
 %V(41,245,59,59,-)

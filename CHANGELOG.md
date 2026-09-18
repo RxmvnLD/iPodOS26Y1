@@ -5,6 +5,30 @@ All notable changes to the **iPodOS26 Y1 — 480×360** port are documented here
 The version history follows the project's adaptation milestones.
 
 ---
+
+## [1.0.1] — Visual Asset Fixes
+
+### Fixed
+
+- Removed the black square backgrounds visible around:
+  - Shuffle
+  - Repeat
+  - Play/Pause
+  - Volume slider
+
+- Added screen-specific BMP assets where the same source icon is displayed over different WPS/SBS backgrounds.
+
+- Rebuilt WPS and SBS progress-bar assets from the original 320×240 resources using nearest-neighbor scaling.
+
+- Reduced scaling artifacts and ringing on the thin progress bars.
+
+- Preserved the original transparent PNG resources as source/reference assets while using Rockbox-compatible BMP assets for the theme image tags.
+
+### Notes
+
+The brightness, Shuffle and Repeat labels visible on the Y1 Quick Screen were identified as part of Rockbox's native Quick Screen rather than as WPS/SBS icon assets. The dedicated Liquid Glass Quick Screen was therefore deferred to version 1.1.0.
+
+---
 ## [1.0.0] — Initial Y1 480×360 Port
 
 ### Added
