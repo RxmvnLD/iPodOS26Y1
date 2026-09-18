@@ -1,0 +1,65 @@
+# iPodOS26 Y1 360p - Dark
+# Ported from iPodOS26 320x240 to Innioasis Y1 480x360
+%wd
+%X(iPodOS26WPS_DARK.bmp)
+
+%xl(S,ShuffleON.bmp,0,0)
+%xl(R,RepeatON.bmp,0,0)
+%xl(U,Repeat1.bmp,0,0)
+
+%xl(H,batterydead.bmp,0,0)
+%xl(I,battery1.bmp,0,0)
+%xl(J,battery2.bmp,0,0)
+%xl(K,battery3.bmp,0,0)
+%xl(L,battery4.bmp,0,0)
+%xl(M,battery5.bmp,0,0)
+%xl(N,battery6.bmp,0,0)
+%xl(O,battery7.bmp,0,0)
+%xl(P,battery8.bmp,0,0)
+%xl(Q,battery9.bmp,0,0)
+%xl(Z,battery10.bmp,0,0)
+%xl(X,batteryfull.bmp,0,0)
+
+# Clock: 120x20 -> 180x30
+%V(150,8,180,30,1)
+%Vf(EDEDED)
+%ac%cH:%cM
+
+# Battery: 17x9 -> 26x14
+%V(399,18,26,14,-)
+%?bl<%xd(H)|%xd(I)|%xd(J)|%xd(K)|%xd(L)|%xd(M)|%xd(N)|%xd(O)|%xd(P)|%xd(Q)|%xd(Z)|%xd(X)>
+
+# Song title
+%V(285,72,150,24,1)
+%Vf(f2f0f0)
+%s%it
+
+# Artist
+%V(285,99,150,21,1)
+%Vf(bfbfbf)
+%s%ia
+
+# Progress: 100x4 -> 150x6 in asset, 8 -> 12 viewport height
+%V(287,134,150,12,-)
+%pb(0,0,150,12,progress_bar.bmp)
+
+# Time
+%V(287,143,150,30,1)
+%Vf(BDC3D5)
+%al%pc%ar-%pr
+
+# Album art: 140x140 -> 210x210
+%V(53,68,210,210,-)
+%Cl(0,0,210,210,c,c)
+%Cd
+
+# Volume slider: 36x87 -> 54x131
+%V(288,174,54,131,-)
+%pv(0,0,54,131,SPKfull.bmp,vertical)
+
+# Shuffle / Repeat icons: 39x39 -> 59x59
+%V(372,174,59,59,-)
+%?ps<%xd(S)|>
+
+%V(372,246,59,59,-)
+%?mm<|%xd(R)|%xd(U)|%xd(R)|%xd(R)>

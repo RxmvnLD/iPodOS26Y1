@@ -1,0 +1,76 @@
+# iPodOS26 Y1 360p - Dark
+# Ported from iPodOS26 320x240 to Innioasis Y1 480x360
+%wd
+%X(iPodOS26SBS_LIGHT.bmp)
+
+%xl(A,ShuffleON.bmp,0,0)
+%xl(B,ShuffleOFF.bmp,0,0)
+%xl(C,RepeatON.bmp,0,0)
+%xl(U,Repeat1.bmp,0,0)
+%xl(D,RepeatOFF.bmp,0,0)
+%xl(E,PLAY.bmp,0,0)
+%xl(F,PAUSE.bmp,0,0)
+
+# Invisible selector
+%xl(T,selectorinvisible.bmp,22,62)
+%xd(T)
+
+# Battery assets
+%xl(H,batterydead.bmp,0,0)
+%xl(I,battery1.bmp,0,0)
+%xl(J,battery2.bmp,0,0)
+%xl(K,battery3.bmp,0,0)
+%xl(L,battery4.bmp,0,0)
+%xl(M,battery5.bmp,0,0)
+%xl(N,battery6.bmp,0,0)
+%xl(O,battery7.bmp,0,0)
+%xl(P,battery8.bmp,0,0)
+%xl(Q,battery9.bmp,0,0)
+%xl(R,battery10.bmp,0,0)
+%xl(S,batteryfull.bmp,0,0)
+
+# Clock
+%V(150,8,180,30,1)
+%Vf(202020)
+%ac%cH:%cM
+
+# Battery
+%V(399,18,26,14,-)
+%?bl<%xd(H)|%xd(I)|%xd(J)|%xd(K)|%xd(L)|%xd(M)|%xd(N)|%xd(O)|%xd(P)|%xd(Q)|%xd(R)|%xd(S)>
+
+# Menu viewport: original 320x125 -> 480x188
+%Vi(-,0,35,480,188,-)
+%Lb(menu,480,188)
+
+# Selected item: original x35,y23,172x20 -> x53,y35,258x30
+%Vl(menu,53,35,258,30,-)
+%Vf(202020)
+%s %LT
+
+# Next items
+%Vl(menu,53,87,258,30,-)
+%Vf(202020)
+%?LT(1,nowrap)<%LT(1)|>
+
+%Vl(menu,53,140,258,30,-)
+%Vf(202020)
+%?LT(2,nowrap)<%LT(2)|>
+
+# Mini player progress: 132x5 -> 198x8
+%V(45,312,198,8,-)
+%pb(0,0,198,8,progress_bar_sbs.bmp)
+
+# Mini-player controls: 39x39 -> 59x59
+%V(41,245,59,59,-)
+%?ps<%xd(A)|%xd(B)>
+
+%V(108,245,59,59,-)
+%?mp<|%xd(F)|%xd(E)>
+
+%V(176,245,59,59,-)
+%?mm<%xd(D)|%xd(C)|%xd(U)|%xd(C)|%xd(C)>
+
+# Mini-player album art: 50x50 -> 75x75
+%V(341,246,75,75,-)
+%Cl(0,0,75,75,c,c)
+%Cd
